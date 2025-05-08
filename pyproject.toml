@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "neo4jvector-demo"
+version = "0.1.0"
+description = "A simple FastAPI application"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+fastapi = "^0.109.2"
+uvicorn = "^0.27.1"
+pydantic = "^2.6.1"
+neo4j = "^5.28.1"
+black = "^25.1.0"
+load-dotenv = "^0.1.0"
+langchain = {extras = ["openai"], version = "^0.3.25"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
